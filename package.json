@@ -1,0 +1,25 @@
+{
+  "name": "instock-austin-api",
+  "version": "1.0.0",
+  "description": "Backend server for InStock Austin",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js",
+    "migrate": "knex migrate:latest",
+    "migrate:down": "knex migrate:down",
+    "migrate:rollback": "knex migrate:rollback",
+    "seed": "knex seed:run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "mysql2": "^3.9.7",
+    "phone": "^3.1.44",
+    "uuid": "^9.0.1"
+  }
+}
